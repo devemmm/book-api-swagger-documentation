@@ -24,7 +24,7 @@ const idLength = 8;
  *           type: string
  *           description: The book author
  *       example:
- *         id: d5fE_asz
+ *         id: 1234567890
  *         title: "Java Programing"
  *         author: Emmanuel NTIVUGURUZWA
  */
