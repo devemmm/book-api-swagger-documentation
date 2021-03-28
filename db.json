@@ -1,0 +1,19 @@
+{
+  "books": [
+    {
+      "id": "1234567890",
+      "title": "Java Programing",
+      "author": "Emmanuel NTIVUGURUZWA"
+    },
+    {
+      "id": "1234567891",
+      "title": "JavaScript Programing",
+      "author": "Emmanuel NTIVUGURUZWA"
+    },
+    {
+      "id": "1234567892",
+      "title": "Introduction to Node.js",
+      "author": "Emmanuel NTIVUGURUZWA"
+    }
+  ]
+}
