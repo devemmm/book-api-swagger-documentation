@@ -13,6 +13,7 @@ const FileSync = require('lowdb/adapters/FileSync')
 const adapter = new FileSync('db.json')
 const db = low(adapter)
 
+const app = express()
 app.use(cors())
 app.use(express.json())
 
@@ -37,8 +38,6 @@ const options = {
 }
 
 const specs =swaggerJsDoc(options)
-
-const app = express()
 
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(specs))
 
