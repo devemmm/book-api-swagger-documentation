@@ -6,7 +6,7 @@ const swaggerUI = require('swagger-ui-express')
 const swaggerJsDoc = require('swagger-jsdoc')
 const booksRouter = require('./routes/books')
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT
 
 const FileSync = require('lowdb/adapters/FileSync')
 
@@ -25,7 +25,7 @@ const options = {
         },
         servers:[
             {
-                url: "http://localhost:3000"
+                url: `${process.env.SITE_URL}`
             }
         ]
         
