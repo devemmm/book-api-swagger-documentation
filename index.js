@@ -13,6 +13,9 @@ const FileSync = require('lowdb/adapters/FileSync')
 const adapter = new FileSync('db.json')
 const db = low(adapter)
 
+app.use(cors())
+app.use(express.json())
+
 db.defaults({ books:[] }).write()
 
 const options = {
@@ -41,8 +44,7 @@ app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(specs))
 
 app.db = db
 
-app.use(cors())
-app.use(express.json())
+
 app.use(morgan("dev"))
 app.use(booksRouter)
 
